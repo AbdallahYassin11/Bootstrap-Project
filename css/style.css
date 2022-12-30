@@ -1,0 +1,650 @@
+/*   Start Varibale   */
+
+:root {
+    --main-transition: all .5s;
+    --main-color: #000;
+}
+
+/*   End Varibale   */
+
+/*   Start Globale Rules   */
+
+* {
+    text-decoration: none !important;
+    list-style: none;
+}
+
+.title-section h3 {
+    font-weight: 900;
+    font-size: 40px;
+    position: relative;
+    display: inline-block;
+    z-index: 4;
+}
+
+.title-section h3:after {
+    content: '';
+    width: 100%;
+    height: 30px;
+    background-image: url(../img/img/dots.png);
+    background-repeat: repeat;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    z-index: -1;
+}
+
+/*   End Globale Rules   */
+
+/*   Star Navber   */
+
+.navbar-nav .nav-link.active {
+    color: var(--main-color);
+    position: relative;
+}
+
+.navbar-nav .nav-link {
+    color: var(--main-color);
+}
+
+.navbar-nav .nav-link.active::before {
+    content: "";
+    bottom: 4px;
+    left: 13%;
+    width: 75%;
+    height: 2px;
+    position: absolute;
+    background-color: var(--main-color);
+}
+
+.navbar-brand{
+    font-size: 18px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/*   End Navber   */
+
+/*   Start Section Home   */
+
+.home {
+    background-image: url(../img/img/bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.home-content h5 {
+    font-size: 50px;
+    font-weight: 800;
+}
+
+.home-content h1 {
+    font-size: 50px;
+}
+
+.home-content h1::after {
+    content: ' |';
+    animation-name: typing;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    font-size: 50px;
+    font-weight: 400;
+}
+
+@keyframes typing {
+    0% {
+        content: "|";
+    }
+
+    1% {
+        content: "L|";
+    }
+
+    2% {
+        content: "La|";
+    }
+
+    3% {
+        content: "Lar|";
+    }
+
+    4% {
+        content: "Larr|";
+    }
+
+    5% {
+        content: "Larry|";
+    }
+
+    6% {
+        content: "Larry |";
+    }
+
+    7% {
+        content: "Larry D|";
+    }
+
+    8% {
+        content: "Larry Da|";
+    }
+
+    9% {
+        content: "Larry Dan|";
+    }
+
+    10% {
+        content: "Larry Dani|";
+    }
+
+    11% {
+        content: "Larry Danie|";
+    }
+
+    12% {
+        content: "Larry Daniel|";
+    }
+
+    13% {
+        content: "Larry Daniels|";
+    }
+
+    23% {
+        content: "Larry Daniels |";
+    }
+
+    24% {
+        content: "Larry Daniel|";
+    }
+
+    25% {
+        content: "Larry Danie|";
+    }
+
+    26% {
+        content: "Larry Dani|";
+    }
+
+    27% {
+        content: "Larry Dan|";
+    }
+
+    28% {
+        content: "Larry Da|";
+    }
+
+    29% {
+        content: "Larry D|";
+    }
+
+    30% {
+        content: "Larry |";
+    }
+
+    31% {
+        content: "Larry|";
+    }
+
+    32% {
+        content: "Larr|";
+    }
+
+    33% {
+        content: "Lar|";
+    }
+
+    34% {
+        content: "La|";
+    }
+
+    35% {
+        content: "L|";
+    }
+
+    36% {
+        content: "|";
+    }
+
+    37% {
+        content: "D|";
+    }
+
+    38% {
+        content: "De|";
+    }
+
+    39% {
+        content: "Dev|";
+    }
+
+    40% {
+        content: "Deve|";
+    }
+
+    41% {
+        content: "Devel|";
+    }
+
+    42% {
+        content: "Develo|";
+    }
+
+    43% {
+        content: "Develop|";
+    }
+
+    44% {
+        content: "Develope|";
+    }
+
+    45% {
+        content: "Developer|";
+    }
+    55% {
+        content: "Developer |";
+    }
+    56% {
+        content: "Developer|";
+    }
+
+    57% {
+        content: "Develope|";
+    }
+
+    58% {
+        content: "Develop|";
+    }
+
+    59% {
+        content: "Develo|";
+    }
+
+    60% {
+        content: "Devel|";
+    }
+
+    61% {
+        content: "Deve|";
+    }
+
+    62% {
+        content: "Dev|";
+    }
+
+    63% {
+        content: "De|";
+    }
+
+    64% {
+        content: "D|";
+    }
+
+    65% {
+        content: "|";
+    }
+
+    66% {
+        content: "D|";
+    }
+
+    67% {
+        content: "|";
+    }
+    68% {
+        content: "D|";
+    }
+
+    69% {
+        content: "De|";
+    }
+
+    70% {
+        content: "Des|";
+    }
+
+    71% {
+        content: "Desi|";
+    }
+
+    72% {
+        content: "Desig|";
+    }
+
+    73% {
+        content: "Design|";
+    }
+
+    74% {
+        content: "Designe|";
+    }
+
+    75% {
+        content: "Designer|";
+    }
+    85% {
+        content: "Designer |";
+    }
+
+    86% {
+        content: "Designe|";
+    }
+
+    87% {
+        content: "Design|";
+    }
+
+    88% {
+        content: "Desig|";
+    }
+
+    89% {
+        content: "Desi|";
+    }
+
+    90% {
+        content: "Des|";
+    }
+
+    91% {
+        content: "De|";
+    }
+
+    92% {
+        content: "D|";
+    }
+
+    100% {
+        content: "|";
+    }
+
+}
+
+.home .home-icon a {
+    color: transparent;
+}
+
+.home .home-icon span i {
+    color: white;
+    font-size: 14px;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+/*   End Section Home   */
+
+/*   Start Section About   */
+
+.about-img {
+    padding: 0 0 0 30px;
+    position: relative;
+}
+
+.about-img::after {
+    content: '';
+    width: 80%;
+    height: 80%;
+    background-image: url(../img/img/dots.png);
+    background-repeat: repeat;
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    z-index: -1;
+}
+
+.about .skills {
+    margin-top: 30px !important;
+}
+
+.about .skills .item {
+    margin-bottom: 30px !important;
+}
+
+.about .skills .skills-progress {
+    width: 100%;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background: #f7f7f7;
+    box-shadow: 0px 2px 7px rgb(0 0 0 / 15%) inset;
+    position: relative;
+}
+
+.about .skills h6 {
+    font-size: 15px;
+    color:white;
+    position: relative;
+    z-index: 2;
+    margin: 0;
+}
+
+.about .skills .skills-progress span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 10%;
+    border-radius: 5px;
+    background-color: var(--main-color);
+}
+
+.about .skills .skills-progress span:after {
+    content: attr(data-value);
+    position: absolute;
+    top: 6px;
+    right: 10px;
+    font-size: 11px;
+    color: #fff;
+}
+
+.about .border-dark {
+    transition: var(--main-transition);
+}
+
+.about .border-dark:hover {
+    background-color: var(--main-color);
+    color: white;
+}
+
+.about-btn .bg-black {
+    transition: var(--main-transition);
+}
+
+.about-btn .bg-black:hover {
+    background-color: white !important;
+    border: var(--main-color) solid 1px !important;
+    color: var(--main-color) !important;
+}
+
+/*   End Section About   */
+
+/*   Start Section Services   */
+
+.services-icon {
+    padding-top: 5px;
+    width: 70px;
+    height: 70px;
+    line-height: 60px;
+    color: black;
+    background: #f4f4f4;
+    border-radius: 50%;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+}
+
+.services-content:hover .services-icon {
+    color: #f4f4f4;
+    background-color: black;
+}
+
+/*   End Section Services   */
+
+/*   Start Section Portfolio   */
+
+.nav-pills .nav-link.active {
+    background-color: transparent;
+    color: var(--main-color);
+    position: relative;
+}
+
+.nav-pills .nav-link.active::before {
+    content: "";
+    bottom: 4px;
+    left: 30%;
+    width: 40%;
+    height: 2px;
+    position: absolute;
+    background-color: var(--main-color);
+}
+
+.nav-pills .nav-link {
+    color: var(--main-color);
+}
+
+.work-icons a i {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 28px;
+    border-radius: 50%;
+    border: 1px solid #111;
+    background: #111;
+    color: #eee;
+}
+
+.work-icons a i:hover {
+    background: transparent;
+    color: #000;
+}
+
+.work-layer {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    background: rgba(255, 255, 255, 0.95);
+    opacity: 0;
+    transition: var(--main-transition);
+    z-index: 2;
+    transform: translateY(10px);
+}
+
+.work-item:hover .work-layer {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.work-item p {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    position: relative;
+    margin-bottom: 15px;
+    transform: translateY(-15px);
+    transition: var(--main-transition);
+}
+
+.work-item:hover .work-item p {
+    transform: translateY(0);
+}
+
+/*   End Section Portfolio   */
+
+/*   Start Section Testimonials   */
+
+.Testimonials .carousel-indicators .active {
+    width: 10px;
+    height: 10px;
+    margin: 5px 7px;
+    background: #7a8a84 !important;
+    border: 1px solid #869791 !important;
+    border-radius: 30px;
+}
+
+.Testimonials .carousel-indicators [data-bs-target] {
+    width: 10px;
+    height: 10px;
+    margin: 5px 7px;
+    background: #D6D6D6;
+    border: 1px solid #D6D6D6;
+    border-radius: 30px;
+}
+
+/*   End Section Testimonials   */
+
+/*   Start Section Blog   */
+
+.Blog .carousel-indicators .active
+{
+    width: 10px;
+    height: 10px;
+    margin: 5px 7px;
+    background: #7a8a84 !important;
+    border: 1px solid #869791 !important;
+    border-radius: 30px;
+}
+
+.Blog .carousel-dark .carousel-indicators [data-bs-target]
+{
+    width: 10px;
+    height: 10px;
+    margin: 5px 7px;
+    background: #D6D6D6;
+    border: 1px solid #D6D6D6;
+    border-radius: 30px;
+}
+
+.card-img-top
+{
+    transition: all 0.5s;
+}
+
+.card-img-top:hover
+{
+ transform: scale(1.1);
+}
+
+/*   End Section Blog   */
+
+/*   Start Section Contact   */
+
+input:focus,textarea:focus {
+    border: 1px solid #ff305b;
+    box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+}
+
+.contact-icon {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-top: 3px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    color: var(--main-color);
+    background: #f4f4f4;
+    border-radius: 50%;
+    transition: var(--main-transition);
+}
+
+.contact-icon:hover {
+    color: #f4f4f4;
+    background-color: var(--main-color);
+}
+
+.contact .btn-outline-dark {
+    width: 100px;
+    color: white;
+    background-color: var(--main-color);
+}
+
+.contact .btn-outline-dark:hover {
+    color: var(--main-color);
+    background-color: white;
+}
+
+/*   End Section Contact   */
+
+/*   The End   */

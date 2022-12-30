@@ -1,0 +1,27 @@
+/*   Section About   */
+
+@media screen and (max-width:1199px){
+    .about-img{
+        margin-bottom: 50px;
+    }
+}
+
+/*   Section Services   */
+
+@media screen and (max-width:991px){
+    .services-content{
+        width: 100%;
+    }
+}
+
+
+/*   Section Contact   */
+
+@media screen and (max-width:767px){
+    input{
+        margin-bottom: 30px;
+    }
+}
+
+/*   The End   */
+
